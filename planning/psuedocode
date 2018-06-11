@@ -1,0 +1,10 @@
+// create server and make sure its working
+// create main scaffolding of project
+// create model for User
+  // add properties to User model
+// create controller for User
+  // route User model to controller 
+// create model for Boardgame
+  // add properties to Boardgame model
+// create controller for Boardgame
+  // route Boardgame model to controller
