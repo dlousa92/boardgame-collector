@@ -1,5 +1,4 @@
 const mongoose = require('../db/connection')
-const bcrypt = require('bcrypt-nodejs')
 const Schema = mongoose.Schema
 
 const boardgameInstance = new Schema({
@@ -11,7 +10,7 @@ const boardgameInstance = new Schema({
     type: String,
     enum: ['Finished, Did not finish']
   },
-  rate: ['thumbsUp, thumbsDown'] 
+  rate: ['thumbsUp, thumbsDown']
 })
 
 module.exports = mongoose.model('boardgameInstance', boardgameInstance)
