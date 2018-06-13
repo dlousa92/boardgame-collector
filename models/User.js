@@ -7,7 +7,7 @@ const User = new Schema({
     email: String,
     password: String
   },
-  collection: [
+  library: [
     {
       type: Schema.Types.ObjectId,
       ref: 'Boardgame'
