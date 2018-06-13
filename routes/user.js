@@ -1,0 +1,10 @@
+const express = require('express')
+const router = express.Router()
+const user = require('../controllers/user.js')
+
+router.get('/login', user.login)
+router.post('/login', user.createLogin)
+router.get('/new', user.signUp)
+router.post('/n', user.createSignUp)
+router.get('/:id', user.collection)
+router.get('/logout', user.logout)
