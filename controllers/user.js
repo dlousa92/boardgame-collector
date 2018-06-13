@@ -2,11 +2,11 @@ const User = require('../models/User')
 const { Boardgame } = require('../models/Boardgame')
 
 module.exports = {
-  collection: (req, res) => {
+  show: (req, res) => {
 
   },
   login: (req, res) => {
-
+    res.send('hello')
   },
   createLogin: (req, res) => {
 
