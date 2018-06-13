@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongod://localhost/boardgamecollector')
+mongoose.connect('mongodb://localhost/boardgamecollector')
 mongoose.Promise = Promise
 
 // error if database connection does not work
