@@ -9,8 +9,7 @@ const boardgameInstance = new Schema({
   play: {
     type: String,
     enum: ['Finished, Did not finish']
-  },
-  rate: ['thumbsUp, thumbsDown']
+  }
 })
 
 module.exports = mongoose.model('boardgameInstance', boardgameInstance)
