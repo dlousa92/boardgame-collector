@@ -3,7 +3,7 @@ const Boardgame = require('../models/Boardgame')
 
 module.exports = {
   show: (req, res) => {
-    res.send('collection goes here')
+    res.render('user/library', {title: 'Library'})
   },
   login: (req, res) => {
     res.send('hello')
