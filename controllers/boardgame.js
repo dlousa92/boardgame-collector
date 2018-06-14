@@ -6,7 +6,7 @@ module.exports = {
     res.render('boardgame/show', {title: 'express'})
   },
   new: (req, res) => {
-
+    res.render('boardgame/new', {title: 'new'})
   },
   create: (req, res) => {
 
