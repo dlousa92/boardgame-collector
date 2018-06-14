@@ -8,3 +8,16 @@
   // add properties to Boardgame model
 // create controller for Boardgame
   // route Boardgame model to controller
+// create controller for Boardgame-instance
+  //route controller to Boardgame-instance
+
+// set up route landing page
+// redirect landing page to login page
+
+// create handlebar files for log in and user library once logged in
+// create handlebar file to display individual games
+  // route to handlebar file
+// create handlebar file to add a boardgame to your collection
+  // route to handlebar file
+// create handlebar file for logging a play
+ // route to handlebar file
