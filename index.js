@@ -9,6 +9,7 @@ app.use('/boardgame', require('./routes/boardgame'))
 // app.use('boardgame-instance', require('./routes/boardgame-instance'))
 
 app.set('port', process.env.PORT || 5000)
-app.listen(4000, () => {
-  console.log('app listening on port 4000 copy that')
-})
+app.listen(process.env.PORT || 5000)
+// (4000, () => {
+//  console.log('app listening on port 4000 copy that')
+// })
