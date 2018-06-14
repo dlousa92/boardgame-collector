@@ -1,9 +1,7 @@
 const express = require('express')
 const app = express()
 
-// app.get('/', (request, response) => {
-//   response.send('All systems go')
-// })
+app.set('view engine', 'hbs')
 
 app.use('/', require('./routes/app'))
 app.use('/user', require('./routes/user'))
