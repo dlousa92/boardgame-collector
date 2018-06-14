@@ -3,7 +3,7 @@ const BoardgameInstance = require('../models/Boardgame-instance')
 
 module.exports = {
   show: (req, res) => {
-
+    res.render('boardgame/show', {title: 'express'})
   },
   new: (req, res) => {
 
