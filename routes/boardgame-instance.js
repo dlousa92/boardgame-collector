@@ -1,9 +1,9 @@
 const express = require('express')
-const router = express.Router
-const boardgameInstance = require('../models/Boardgame-instance')
+const router = express.Router()
+const boardgameInstance = require('../controllers/boardgame-instance')
 
-router.get('boardgame-instance/:id', boardgameInstance.show)
-router.get('boardgame-instance/new', boardgameInstance.new)
-router.post('boardgame-instance/new', boardgameInstance.create)
+router.get('/:id', boardgameInstance.show)
+router.get('/new', boardgameInstance.new)
+router.post('/', boardgameInstance.create)
 
 module.exports = router
