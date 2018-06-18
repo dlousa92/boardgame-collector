@@ -19,6 +19,7 @@
   "homepage": "https://github.com/dlousa92/boardgame-collector#readme",
   "dependencies": {
     "bcrypt": "^2.0.1",
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "hbs": "^4.0.1",
     "mongodb": "^3.0.10",
