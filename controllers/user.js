@@ -3,7 +3,13 @@ const Boardgame = require('../models/Boardgame')
 
 module.exports = {
   show: (req, res) => {
-    res.render('user/library', {title: 'Library'})
+    User.findOne({ _id: req.params.id })
+      .populate({
+        path: 'library'
+      })
+      .then(user => {
+        res.render('user/library', {})
+      })
   },
   login: (req, res) => {
     res.send('hello')
