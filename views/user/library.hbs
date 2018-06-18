@@ -1,11 +1,14 @@
 <div>
   <h3>Collection</h3>
   <section>
-    <ul>
-      <li>Boardgame: </li>
-      <li>Rating: </li>
-      <li>Plays: </li>
-      <li><a href='#'>+</a></li>
-    </ul>
+    {{#if user.boardgames}}
+      <div class='boardgames'>
+        {{#each user.boardgames}}
+          {{> 'boardgame'}}
+        {{/each}}
+      </div>
+    {{else}}
+      <p>You do not own any boardgames yet, traveler.</p>
+    {{/if}}
   </section>
 </div>
