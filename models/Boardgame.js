@@ -4,12 +4,10 @@ const Schema = mongoose.Schema
 const Boardgame = new Schema({
   info: {
     title: String,
-    genre: String,
-    designer: String,
-    description: String
-  },
-  totalPlays: Number,
-  rating: String
+    image: String,
+    year: String,
+    rating: Number
+  }
 })
 
 module.exports = mongoose.model('Boardgame', Boardgame)
