@@ -10,12 +10,11 @@ module.exports = {
       .then(user => {
         res.render('user/library', {})
       })
+      // user/5b27d657fe8f803744da9d7a for testing purposes
   },
   login: (req, res) => {
-    res.send('hello')
   },
   createLogin: (req, res) => {
-
   },
   signUp: (req, res) => {
     res.send('welcome fren')
