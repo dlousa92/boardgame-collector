@@ -3,7 +3,8 @@ const BoardgameInstance = require('../models/Boardgame-instance')
 
 module.exports = {
   show: (req, res) => {
-    res.render('boardgame/show', {title: 'express'})
+    Boardgame.findOne({ _id: req.params.id })
+    res.render('boardgame/show', {title: 'boardgame'})
   },
   new: (req, res) => {
     res.render('boardgame/new', {title: 'new'})
