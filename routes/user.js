@@ -7,6 +7,7 @@ router.post('/login', user.createLogin)
 router.get('/signUp', user.signUp) // will sign user up
 router.post('/signUp', user.createSignUp)
 router.get('/:id', user.show) // will show users library of boardgames
-router.get('/logout', user.logout) // will log user out
+router.get('/logout', user.logout)
+router.put('/:id', user.update) // will log user out
 
 module.exports = router
