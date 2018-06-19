@@ -1,5 +1,6 @@
 const User = require('../models/User')
 const Boardgame = require('../models/Boardgame')
+const passport = require('passport')
 
 module.exports = {
   show: (req, res) => {
@@ -17,10 +18,14 @@ module.exports = {
   createLogin: (req, res) => {
   },
   signUp: (req, res) => {
-    res.send('welcome fren')
   },
   createSignUp: (req, res) => {
-
+    const signupStrategy = passport.authenticate('local-signup', {
+      successRedirect: 'user/library',
+      failureRedirect: '/login',
+      failureFlash: true
+    })
+    return signupStrategy(req, res)
   },
   logout: (req, res) => {
     req.logout()
