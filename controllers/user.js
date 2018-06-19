@@ -23,6 +23,7 @@ module.exports = {
 
   },
   logout: (req, res) => {
-    res.send('goodbye')
+    req.logout()
+    res.redirect('/')
   }
 }
