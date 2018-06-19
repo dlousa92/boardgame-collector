@@ -8,20 +8,29 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-image: url('../img/tic-tac-toe.png');
 }
 
 header {
+  width: 60%;
   margin-top: 2%;
+  color: #352208;
+  background: #ECE4B7;
 }
 
 h1 {
   font-size: 3em;
-  margin-bottom: 2%;
+  margin: 2% 0%;
+  text-align: center;
+  font-family: 'Righteous', cursive;
 }
 
 .navbar {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  height: 40px;;
+  font-family: 'Roboto Slab', serif;
 }
 
 li {
@@ -40,5 +49,7 @@ main {
   align-items: center;
   flex-direction: column;
   width: 60%;
-  margin-top: 10%;
+  color: #F3F9D2;
+  padding: 5% 5%;
+  background: #352208;
 }
