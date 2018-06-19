@@ -71,5 +71,8 @@ input {
   width: 100%;
   font-size: 1.2em;
   margin: 1%;
+  padding: 1%;
   border-radius: 6%;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
 }
