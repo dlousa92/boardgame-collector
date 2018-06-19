@@ -21,3 +21,9 @@
   // route to handlebar file
 // create handlebar file for logging a play
  // route to handlebar file
+
+
+ Boardgame page pseudocode
+ // have handlebar file show board game info instead of placeholder info
+ // change handlebar file of adding a game to search database for game you want to add
+ // create logic once game is added to collection to show up in users library
