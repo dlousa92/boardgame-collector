@@ -9,7 +9,14 @@ module.exports = {
     res.render('boardgame/new', {title: 'new'})
   },
   create: (req, res) => {
-
+    Boardgame.findOne({})
+      .then(boardgame => {
+        req.user.library.push(boardgame)
+        req.user.save(err => {
+          res.redirect('user/library')
+          err()
+        })
+      })
   },
   edit: (req, res) => {
 
