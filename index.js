@@ -3,6 +3,7 @@ const hbs = require('hbs')
 const bodyParser = require('body-parser')
 const app = express()
 
+app.use(express.static(__dirname + '/public'))
 app.use('/', require('./routes/app'))
 app.use('/user', require('./routes/user'))
 app.use('/boardgame', require('./routes/boardgame'))
