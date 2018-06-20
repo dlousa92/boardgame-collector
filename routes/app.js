@@ -7,7 +7,7 @@ router.get('/', function (req, res) {
 })
 
 router.get('/login', function (req, res) {
-  res.render('user/login', {title: 'Express', message: req.flash('signupMessage')})
+  res.render('user/login', {title: 'Express', message: req.flash('signupMessage'), loginMessage: req.flash('loginMessage')})
 })
 
 module.exports = router

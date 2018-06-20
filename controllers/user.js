@@ -16,12 +16,18 @@ module.exports = {
   login: (req, res) => {
   },
   createLogin: (req, res) => {
+    const loginProperty = passport.authenticate('local-login', {
+      successRedirect: '/',
+      failureRedirect: '/login'
+    })
+
+    return loginProperty(req, res)
   },
   signUp: (req, res) => {
   },
   createSignUp: (req, res) => {
     const signupStrategy = passport.authenticate('local-signup', {
-      successRedirect: 'user/library',
+      successRedirect: '/:id',
       failureRedirect: '/login',
       failureFlash: true
     })
