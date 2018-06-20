@@ -3,20 +3,16 @@ const BoardgameInstance = require('../models/Boardgame-instance')
 
 module.exports = {
   show: (req, res) => {
-    Boardgame.findOne({ _id: req.params.id })
-    res.render('boardgame/show', {title: 'boardgame'})
+
   },
   new: (req, res) => {
     res.render('boardgame/new', {title: 'new'})
   },
-  create: (req, res) => {
-    Boardgame.findOne({})
-      .then(boardgame => {
-        req.user.library.push(boardgame)
-        req.user.save(err => {
-          res.redirect('user/library')
-          err()
-        })
+  search: (req, res) => {
+    Boardgame.findOne({ title: req.body.title })
+      .then(game => {
+        console.log(game)
+        res.render('boardgame/show')
       })
   },
   edit: (req, res) => {
