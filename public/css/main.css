@@ -76,3 +76,32 @@ input {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
 }
+
+.searchresult {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  margin: 0;
+  background: #9B1D20;
+}
+
+.boxcover {
+  max-height: 325px;
+  max-width: 35%;
+  z-index: 1;
+  box-shadow: 12px -11px 11px black;
+  margin-bottom: 2%;
+}
+
+.boardgamename {
+  font-size: 2em;
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 1%;
+}
+
+.addto {
+  color: #F3F9D2;
+}
