@@ -1,5 +1,6 @@
 const Boardgame = require('../models/Boardgame')
 const BoardgameInstance = require('../models/Boardgame-instance')
+const User = require('../models/User')
 
 module.exports = {
   show: (req, res) => {
@@ -12,7 +13,7 @@ module.exports = {
     console.log(req.body)
     Boardgame.findOne({ 'info.title': req.body.title })
       .then(game => {
-        console.log(game)
+        // console.log(game)
         res.render('boardgame/show', { game })
       })
   },
@@ -20,7 +21,6 @@ module.exports = {
 
   },
   update: (req, res) => {
-
   },
   delete: (req, res) => {
 
