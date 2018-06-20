@@ -102,6 +102,9 @@ input {
   margin-bottom: 1%;
 }
 
-.addto {
-  color: #F3F9D2;
+.input-field > .addto {
+  padding: 10%;
+  font-size: .8em;
+  margin: 0;
+  width: 120px;
 }
