@@ -17,7 +17,7 @@ module.exports = {
   },
   createLogin: (req, res) => {
     const loginProperty = passport.authenticate('local-login', {
-      successRedirect: '/user/:id',
+      successRedirect: '/profile',
       failureRedirect: '/login'
     })
 
@@ -27,7 +27,7 @@ module.exports = {
   },
   createSignUp: (req, res) => {
     const signupStrategy = passport.authenticate('local-signup', {
-      successRedirect: '/:id',
+      successRedirect: '/profile',
       failureRedirect: '/login',
       failureFlash: true
     })
@@ -38,5 +38,14 @@ module.exports = {
     res.redirect('/')
   },
   update: (req, res) => {
+    res.send('UPDATE WORKS')
+    // Boardgame.findOne({ 'info.title': req.body.title })
+    //   .then(game => {
+    //     console.log(game)
+    //     req.user.library.push(game)
+    //     game.save(err => {
+    //       res.redirect(`/user/${user._id}`)
+    //     })
+    //   })
   }
 }
