@@ -96,9 +96,8 @@ module.exports = function (passport) {
     passwordField: 'password',
     passReqToCallback: true
   }, function (req, email, password, callback) {
-
     // Search for a user with this email
-    User.findOne({ 'local.email': email }, function(err, user) {
+    User.findOne({ 'local.email': email }, function (err, user) {
       if (err) {
         return callback(err)
       }
