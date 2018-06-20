@@ -9,10 +9,11 @@ module.exports = {
     res.render('boardgame/new', {title: 'new'})
   },
   search: (req, res) => {
-    Boardgame.findOne({ title: req.body.title })
+    console.log(req.body)
+    Boardgame.findOne({ 'info.title': req.body.title })
       .then(game => {
         console.log(game)
-        res.render('boardgame/show')
+        res.render('boardgame/show', { game })
       })
   },
   edit: (req, res) => {
