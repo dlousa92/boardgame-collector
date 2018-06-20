@@ -9,6 +9,11 @@ const methodOverride = require('method-override')
 
 const app = express()
 require('./config/passport')(passport)
+
+app.use(function (req, res, next) {
+  res.locals.currentUser = req.user
+  next()
+})
 hbs.registerPartials(__dirname + "/views/partials")
 app.use(express.static(__dirname + '/public'))
 app.use(cookieParser())
