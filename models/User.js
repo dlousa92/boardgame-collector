@@ -16,7 +16,7 @@ const User = new Schema({
   ]
 })
 
-User.methods.encrypt = function(password) {
+User.methods.encrypt = function (password) {
   return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null)
 }
 
