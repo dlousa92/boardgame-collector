@@ -103,8 +103,8 @@ input {
 }
 
 .input-field > .addto {
+  margin-top: 2%;
   padding: 10%;
   font-size: .8em;
-  margin: 0;
   width: 120px;
 }
