@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  width: 70%;
+  width: 80%;
   color: #352208;
   background: #ECE4B7;
 }
@@ -48,7 +48,7 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
   min-height: 60vh;
   color: #F3F9D2;
   padding: 2% 2%;
