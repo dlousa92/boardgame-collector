@@ -1,3 +1,4 @@
+/* Styles that carry over to every part of the app */
 * {
   margin: 0;
   box-sizing: border-box;
@@ -63,6 +64,8 @@ main {
   background: #352208;
 }
 
+/* Styles for log in page */
+
 .login, .sign-up {
   font-size: 2em; 
   margin: 1% 1%;
@@ -84,6 +87,8 @@ input {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
 }
+
+/* Styles for user library page */
 
 .collectionheader {
   color: #F3F9D2;
@@ -127,6 +132,8 @@ width: 100%;
   box-shadow: 8px -8px 9px black;
 }
 
+/* If user has not added any games yet */
+
 .nogames {
   font-size: 2em;
   font-family: 'Roboto Slab', serif;
@@ -136,6 +143,8 @@ width: 100%;
   margin-top: 15%;
   margin-bottom: 5%;
 }
+
+/* Also styles the Go Back button on the boardgame search page */
 
 .pagelinkparent:hover {
   transform: scale(1.2);
@@ -160,6 +169,8 @@ width: 100%;
 .pagelink:hover {
   background: #352208;
 }
+
+/* Styles for the add game page */
 
 .addgameheader {
   color: #F3F9D2;
@@ -190,7 +201,18 @@ width: 100%;
 .boardgamename {
   font-size: 2em;
   font-family: 'Roboto Slab', serif;
+}
+
+.boardgamerating {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+}
+
+.boardgamedate {
   margin-bottom: 4%;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+
 }
 
 .input-field > .addto {

@@ -1,6 +1,8 @@
 <div class='searchresult'>
     <img class='boxcover' src={{game.info.image}}>
     <p class='boardgamename'>{{game.info.title}}</p>
+    <p class='boardgamerating'>BGG Rating: {{game.info.rating}}</p>
+    <p class='boardgamedate'>Release: {{game.info.year}}</p>
     
     <form action='/user/{{currentUser._id}}?_method=PUT' method='POST'>
       <p class='input-field'>
