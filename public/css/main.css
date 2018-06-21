@@ -9,12 +9,11 @@ body {
   justify-content: center;
   flex-direction: column;
   background-image: url('../img/tic-tac-toe.png');
-  height: 90vh;
+  height: 100vh;
 }
 
 header {
   width: 70%;
-  margin-top: 2%;
   color: #352208;
   background: #ECE4B7;
 }
@@ -51,7 +50,7 @@ main {
   flex-direction: column;
   width: 70%;
   color: #F3F9D2;
-  padding: 5% 5%;
+  padding: 2% 2%;
   background: #352208;
 }
 
@@ -75,6 +74,36 @@ input {
   border-radius: 6%;
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
+}
+
+.collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #9B1D20;
+  height: 600px;
+}
+
+.boardgames {
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 25%;
+  margin: 2%;
+}
+
+.collectionbox {
+  max-height: 250px;
+  max-width: 100%;
+  box-shadow: 8px -8px 9px black;
 }
 
 .searchresult {
