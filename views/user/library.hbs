@@ -1,15 +1,15 @@
-<div>
-  <h3>Collection</h3>
+<div class='collection'>
+  <h2>Your Collection</h2>
   <section>
-    {{#if user.boardgames}}
+    {{#if user.library}}
       <div class='boardgames'>
-        {{#each user.boardgames}}
+        {{#each user.library}}
           {{> 'boardgame'}}
         {{/each}}
       </div>
     {{else}}
-      <p>You do not own any boardgames yet, traveler.</p>
-      <p><a href='/boardgame/new'>Add a Game</a></p>
+      <p class='nogames'>You do not own any boardgames yet, traveler.</p>
+      <p><a class ='addgame' href='/boardgame/new'>Add a Game</a></p>
     {{/if}}
   </section>
 </div>
