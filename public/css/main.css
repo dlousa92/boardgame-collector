@@ -130,19 +130,19 @@ width: 100%;
 .nogames {
   font-size: 2em;
   font-family: 'Roboto Slab', serif;
-  margin-top: 10%;
+  margin: 10%;
 }
 .addgamelink {
   margin-top: 15%;
   margin-bottom: 5%;
 }
 
-.addgamelink:hover {
+.pagelinkparent:hover {
   transform: scale(1.2);
   transition: .4s;
 }
 
-.addgame {
+.pagelink {
   font-size: 1.4em;
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
@@ -151,7 +151,13 @@ width: 100%;
   color: #ECE4B7;
 }
 
-.addgame:hover {
+.pagelinkshow {
+  margin-bottom: 2%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 10px;
+}
+.pagelink:hover {
   background: #352208;
 }
 
@@ -168,7 +174,6 @@ width: 100%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 500px;
   width: 100%;
   margin: 0;
   background: #9B1D20;
@@ -179,13 +184,13 @@ width: 100%;
   max-width: 35%;
   z-index: 1;
   box-shadow: 12px -11px 11px black;
-  margin-bottom: 2%;
+  margin: 3% 0% 2% 0%;
 }
 
 .boardgamename {
   font-size: 2em;
   font-family: 'Roboto Slab', serif;
-  margin-bottom: 1%;
+  margin-bottom: 4%;
 }
 
 .input-field > .addto {
@@ -193,4 +198,8 @@ width: 100%;
   padding: 10%;
   font-size: .8em;
   width: 120px;
+}
+
+.or {
+  margin: 2% 0%;
 }
