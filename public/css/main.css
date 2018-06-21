@@ -33,6 +33,13 @@ h1 {
   font-family: 'Roboto Slab', serif;
 }
 
+.navbaritem:hover {
+  background: #352208;
+  color: #ECE4B7;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
 li {
   list-style-type: none;
   font-size: 1.3em;
@@ -42,6 +49,7 @@ li {
 a {
   text-decoration: none;
   color: black;
+  padding: 10px;
 }
 
 main {

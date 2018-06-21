@@ -14,12 +14,12 @@
       <nav>
         <ul class='navbar'>
           {{#if currentUser}}
-          <li><a href='/user/profile'>Go to Collection</a></li>
-          <li><a href='/boardgame/new'>Add Game to Library</a></li>
-          <li><a href='/user/logout'>Log Out</a></li>
+          <li class='navbaritemparent'><a class='navbaritem' href='/user/profile'>Go to Collection</a></li>
+          <li class='navbaritemparent'><a class='navbaritem' href='/boardgame/new'>Add Game to Library</a></li>
+          <li class='navbaritemparent'><a class='navbaritem' href='/user/logout'>Log Out</a></li>
           {{else}}
-          <li><a href='#'>Log In</a></li>
-          <li><a href='#'>Sign Up</a></li>
+          <li class='navbaritemparent'><a class='navbaritem' href='#'>Log In</a></li>
+          <li class='navbaritemparent'><a class='navbaritem' href='#'>Sign Up</a></li>
           {{/if}}
         </ul>
       </nav>
