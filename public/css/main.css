@@ -225,3 +225,12 @@ width: 100%;
 .or {
   margin: 2% 0%;
 }
+
+.details {
+  height: 325px;
+  width: 35px;
+}
+
+.showdetails {
+  background: black;
+}
