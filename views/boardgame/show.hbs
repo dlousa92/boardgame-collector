@@ -2,9 +2,10 @@
     <img class='boxcover' src={{game.info.image}}>
     <p class='boardgamename'>{{game.info.title}}</p>
     
-    <form action='/user/update' method='PUT'>
+    <form action='/user/{{currentUser._id}}?_method=PUT' method='POST'>
       <p class='input-field'>
-        <input class='addto' type='submit' name='{{game.info.title}}' value='+ to Collection'>
+        <input type="hidden" name="gameId" value="{{game._id}}">
+        <input class='addto' type='submit' value='Add to Collection'>
       </p>
     </form>
 </div>

@@ -38,16 +38,14 @@ module.exports = {
     res.redirect('/')
   },
   update: (req, res) => {
-    // res.send('UPDATE WORKS')
-    Boardgame.findOne({ 'info.title': req.body.title })
-      .then(game => {
-        req.user.library.push(game)
-        // you're saving the game after updating the user!
-        req.user.save(err => {
-          // the user is req.user, not just user!
-          res.redirect(`/user/${req.user.id}`)
-        })
-      })
+    console.log(req.body)
+    
+    req.user.library.push(req.body.gameId)
+    // you're saving the game after updating the user!
+    req.user.save(err => {
+      // the user is req.user, not just user!
+      res.redirect(`/user/${req.user.id}`)
+    })
   },
   profile: (req, res) => {
     res.redirect(`/user/${req.user.id}`)

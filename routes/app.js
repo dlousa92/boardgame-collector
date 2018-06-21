@@ -14,9 +14,5 @@ router.use('/user', require('./user'))
 router.use('/boardgame', require('./boardgame'))
 router.use('/boardgame-instance', require('./boardgame-instance'))
 
-router.use(function (req, res, next) {
-  res.locals.currentUser = req.user
-  next()
-})
 
 module.exports = router
