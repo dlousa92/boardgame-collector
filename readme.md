@@ -2,7 +2,7 @@
 
 The Board Game Collector(BGC) is a boardgame library that let's users keep an online collection of the board games they own! Currently there is no easy way to keep track of your boardgame collection outside of a physical pen or paper or using BoardGameGeek, which is a hassle to figure out. BGC displays the boardgames you own in a very clean fashion, anyone could understand which games are in your collection
 
-# This is the landing page
+# This is the collection page
 ![The BGC](https://raw.githubusercontent.com/dlousa92/boardgame-collector/master/public/img/screenshot.png)
 
 # List of Features
