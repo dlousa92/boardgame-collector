@@ -1,0 +1,24 @@
+Description
+----------------------------
+
+The Board Game Collector is an online library of boardgames, it's purpose it to allow users to make an account and save individual baordgames
+to their collection. They can then easily show which games they own to other gamers with the clear way BGC presents boardgames!
+
+Models & Their Properties
+----------------------------
+
+1. User Model
+    + name
+    + email
+    + password
+
+2. Boardgame Model
+    + title
+    + image
+    + year
+    + rating
+
+3. Boardgame-Instance -> (This will eventually let you log when you play a game, so you and other users can see which
+    + boardgame           games you play the most!)
+    + play
+
