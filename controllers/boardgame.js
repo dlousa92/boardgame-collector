@@ -17,9 +17,6 @@ module.exports = {
         res.render('boardgame/show', { game })
       })
   },
-  edit: (req, res) => {
-
-  },
   update: (req, res) => {
   },
   delete: (req, res) => {
